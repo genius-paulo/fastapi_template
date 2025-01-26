@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "fastapi-template"
+version = "0.0.1"
+description = ""
+authors = ["genius-paulo"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.7"
+requests = "^2.32.3"
+uvicorn = "^0.34.0"
+loguru = "^0.7.3"
+pytest = "^8.3.4"
+httpx = "^0.28.1"
+pytest-cov = "^6.0.0"
+pytest-asyncio = "^0.25.2"
+pydantic = {extras = ["email"], version = "^2.10.6"}
+json-db-lite = "^0.1.2"
+alembic = "^1.14.1"
+asyncpg = "^0.30.0"
+sqlalchemy = "^2.0.37"
+pydantic-settings = "^2.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+asyncio_default_fixture_loop_scope = "function"
